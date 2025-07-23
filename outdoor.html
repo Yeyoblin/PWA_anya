@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sims 4: Жизнь на улице</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .outdoor-activities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .activity-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--secondary);
+        }
+        
+        .activity-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .activity-content {
+            padding: 1.5rem;
+        }
+        
+        .activity-card h3 {
+            color: var(--secondary);
+            margin-top: 0;
+        }
+        
+        .skills-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Жизнь на улице</h1>
+            <p class="subtitle">Гармония с природой в The Sims 4</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="herbalism.html">Знахарство</a></li>
+            <li><a href="fairies.html">Феи</a></li>
+            <li><a href="outdoor.html">Жизнь на улице</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <img src="images/outdoor-main.avif" alt="Жизнь на улице в The Sims 4" class="main-image">
+        
+        <h2>Свобода и природа</h2>
+        <p>Дополнение "Волшебство природы" позволяет вашим симам жить в гармонии с природой, отказавшись от комфорта городской жизни.</p>
+        
+        <div class="outdoor-activities">
+            <div class="activity-card">
+                <img src="images/camping.jpg" alt="Кемпинг">
+                <div class="activity-content">
+                    <h3>Кемпинг</h3>
+                    <p>Разбивайте лагеря в лесах, устанавливайте палатки и наслаждайтесь природой.</p>
+                </div>
+            </div>
+            
+            <div class="activity-card">
+                <img src="images/foraging.jpg" alt="Собирательство">
+                <div class="activity-content">
+                    <h3>Собирательство</h3>
+                    <p>Ищите съедобные растения, ягоды и грибы для пропитания.</p>
+                </div>
+            </div>
+            
+            <div class="activity-card">
+                <img src="images/bonfire.jpg" alt="Костёр">
+                <div class="activity-content">
+                    <h3>Приготовление на костре</h3>
+                    <p>Готовьте простую, но вкусную еду на открытом огне.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skills-section">
+            <h2>Навыки выживания</h2>
+            <p>Ваши симсы смогут развивать новые навыки:</p>
+            
+            <ul>
+                <li><strong>Выживание в природе:</strong> Умение находить пищу и укрытие</li>
+                <li><strong>Ориентирование:</strong> Навык не заблудиться в лесу</li>
+                <li><strong>Ручная работа:</strong> Создание инструментов из природных материалов</li>
+                <li><strong>Знание растений:</strong> Умение отличать съедобное от ядовитого</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 The Sims 4: Волшебство природы. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

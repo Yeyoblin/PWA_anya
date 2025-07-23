@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Sims 4: Волшебство природы - Главная</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="site1.png" type="image/png" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>The Sims 4: Волшебство природы</h1>
+            <p class="subtitle">Откройте для себя магию и тайны нового дополнения</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="herbalism.html">Знахарство</a></li>
+            <li><a href="fairies.html">Феи</a></li>
+            <li><a href="outdoor.html">Жизнь на улице</a></li>
+            <li><a href="contacts.html">Форма</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <img src="https://drop-assets.ea.com/images/4gKT6EH3Q71bpCHogXpWR/4fd533c13bacd5fcdad8277bb00ae598/TS4_Enchanted-by-Nature_Sale-Hero_16x9-RU.jpg?im=AspectCrop=(16,9),xPosition=0.8571428571428571,yPosition=0.8571428571428571;Resize=(2560)&q=80" alt="The Sims 4 Волшебство природы" class="main-image" />
+        
+        <h2>Добро пожаловать в мир магии!</h2>
+        <p>Дополнение "Волшебство природы" привносит в мир The Sims 4 три новых волшебных направления, которые изменят вашу игровую реальность. Исследуйте новые возможности вместе с нами!</p>
+        
+        <div class="features">
+            <div class="feature-card">
+                <h3>Знахарство</h3>
+                <p>Освойте древние рецепты и зелья. Ваши симсы смогут лечить, вредить или даже изменять судьбу других персонажей.</p>
+                <a href="herbalism.html" class="btn">Подробнее</a>
+            </div>
+            <div class="feature-card">
+                <h3>Феи</h3>
+                <p>Встречайте новый оккультный тип - фей! Эти маленькие волшебные существа обладают уникальными способностями.</p>
+                <a href="fairies.html" class="btn">Подробнее</a>
+            </div>
+            <div class="feature-card">
+                <h3>Жизнь на улице</h3>
+                <p>Ваши симсы могут теперь жить в гармонии с природой. Разбивайте лагеря, готовьте на костре, собирайте дары леса.</p>
+                <a href="outdoor.html" class="btn">Подробнее</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Контакты:</p>
+            <p>телефон: +89129530212</p>
+            <p>наша почта: sims4@gmail.ru</p>
+            <p>© 2025 The Sims 4: Волшебство природы. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('sw.js', { scope: './' })
+            .then(() => console.log('ServiceWorker зарегистрирован'))
+            .catch(err => console.log('Ошибка регистрации ServiceWorker:', err));
+        });
+      }
+    </script>
+
+    <button id="installBtn" style="display: none;">Установить приложение</button>
+    <script>
+      let deferredPrompt;
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        document.getElementById('installBtn').style.display = 'block';
+      });
+      document.getElementById('installBtn').addEventListener('click', () => {
+        deferredPrompt.prompt();
+      });
+    </script>
+</body>
+</html>
