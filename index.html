@@ -1,24 +1,24 @@
-<!Doctype html>
-<HTML лауреат="Ру">
-<Голова>
-    <Ст. Rreregiog="манифест" href="/manifest.json">
-    <МЕТА ЧArcies="UTF-8" />
-    <МЕТА Соглас="ViewPort" СОДЕРГАНЕ="ширина = ширина устройства, начальная масштаба=1" />
-    <Зagolovok>Sims 4: ВОЛЕБЕРВОПРЕВО</Зagolovok>
-    <Ст. Rreregiog="таблица стиля" href="Style.css" />
-    <Ст. Rreregiog="икона" href="сайт1.png" ТИП="Изображение/PNG" />
-</Голова>
-<тело>
-    <зagolovok>
-        <Дивигион Сорт="контейнер">
-            <ЧАС1>Sims 4: Volшebstvo prirodы</ЧАС1>
-            <П.. Сорт="подзаголовок">Otkroйte -opepe -mamageю и taйnы nonowogo odopolnenhynavy</П..>
-        </Дивигион>
-    </зagolovok>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Sims 4: Волшебство природы - Главная</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="site1.png" type="image/png" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>The Sims 4: Волшебство природы</h1>
+            <p class="subtitle">Откройте для себя магию и тайны нового дополнения</p>
+        </div>
+    </header>
 
-    <Navigaцia>
-        <UL>
-            <Л><А href="index.html">Глав</А></Л>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
             <li><a href="herbalism.html">Знахарство</a></li>
             <li><a href="fairies.html">Феи</a></li>
             <li><a href="outdoor.html">Жизнь на улице</a></li>
@@ -63,7 +63,7 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('service-worker.js')
+          navigator.serviceWorker.register('service-worker.js', { scope: './' })
             .then(() => console.log('ServiceWorker зарегистрирован'))
             .catch(err => console.log('Ошибка регистрации ServiceWorker:', err));
         });
@@ -84,3 +84,4 @@
     </script>
 </body>
 </html>
+
