@@ -1,7 +1,7 @@
 {
   "name": "the sims 4",
   "short_name": "the sims 4",
-  "start_url": "/",
+  "start_url": "/PWA_anya",
   "display": "standalone",
   "description": "Приложение для sims",
   "lang": "ru",
