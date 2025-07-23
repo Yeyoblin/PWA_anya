@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Sims 4: Волшебство природы - Главная</title>
@@ -63,7 +63,7 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/PWA_anya/service-worker.js')
+          navigator.serviceWorker.register('service-worker.js')
             .then(() => console.log('ServiceWorker зарегистрирован'))
             .catch(err => console.log('Ошибка регистрации ServiceWorker:', err));
         });
